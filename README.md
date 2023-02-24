@@ -1,4 +1,4 @@
-# NoogaNaega Red NFT smart contract used on Goerli test network.
+## NoogaNaega Red NFT smart contract used on Goerli test network.
 
 This is a Solidity smart contract for a non-fungible token (NFT) collection named "NoogaNaega". It inherits from several OpenZeppelin libraries, including ERC721 for implementing the NFT standard, Ownable for setting an owner who has special permissions, ReentrancyGuard for preventing reentrancy attacks, and PaymentSplitter for automatically distributing funds to a list of addresses and percentages.
 
@@ -11,7 +11,7 @@ The setBaseURI and setBaseExtension functions can be used to set the base URI an
 Finally, the contract includes the totalSupply function to get the current total number of tokens minted.
 
 
-# Here is a quick security audit of our smart contract
+## Here is a quick security audit of our smart contract
 
 1. No critical vulnerabilities were identified in this smart contract. However, as a best practice, it is always recommended to perform a thorough code review and testing to identify and mitigate any possible security threats.
 
