@@ -38,7 +38,7 @@ contract NoogaNaega is
     ];
 
     constructor(string memory uri)
-        ERC721("Jempsey", "J_J")
+        ERC721("NoogaNaega", "N_N")
         PaymentSplitter(_wallet, _walletAllocations)
         ReentrancyGuard()
     {
