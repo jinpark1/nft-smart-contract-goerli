@@ -1,8 +1,14 @@
 ## NoogaNaega Red NFT smart contract used on Goerli test network.
 
-This is a Solidity smart contract for a non-fungible token (NFT) collection named "NoogaNaega". It inherits from several OpenZeppelin libraries, including ERC721 for implementing the NFT standard, Ownable for setting an owner who has special permissions, ReentrancyGuard for preventing reentrancy attacks, and PaymentSplitter for automatically distributing funds to a list of addresses and percentages.
+This is a Solidity smart contract for a non-fungible token (NFT) collection named "NoogaNaega". 
 
-The contract has several variables and functions that can be used to manage the NFT collection. It has a maximum supply of 9001 tokens, and each transaction can mint up to 10 tokens at once. The publicMint function allows users to mint tokens, but only when the contract is not paused, the amount requested is greater than zero, and the current total number of tokens plus the amount requested is less than or equal to the maximum supply. Additionally, the price for each token is set at 0.01 ETH for testing purposes, and the function checks that the total payment amount is sufficient to cover the cost of the requested tokens.
+It inherits from several OpenZeppelin libraries, including ERC721 for implementing the NFT standard, Ownable for setting an owner who has special permissions, ReentrancyGuard for preventing reentrancy attacks, and PaymentSplitter for automatically distributing funds to a list of addresses and percentages.
+
+The contract has several variables and functions that can be used to manage the NFT collection. It has a maximum supply of 9001 tokens, and each transaction can mint up to 10 tokens at once. 
+
+The publicMint function allows users to mint tokens, but only when the contract is not paused, the amount requested is greater than zero, and the current total number of tokens plus the amount requested is less than or equal to the maximum supply. 
+
+Additionally, the price for each token is set at 0.01 ETH for testing purposes, and the function checks that the total payment amount is sufficient to cover the cost of the requested tokens.
 
 The mintInternal function is used to actually mint the tokens, and it increments the token ID counter and mints a new token to the message sender.
 
