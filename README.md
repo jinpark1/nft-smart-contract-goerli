@@ -17,7 +17,7 @@ The setBaseURI and setBaseExtension functions can be used to set the base URI an
 Finally, the contract includes the totalSupply function to get the current total number of tokens minted.
 
 
-## Here is a quick security audit of our smart contract
+## Security audit of our smart contract
 
 1. No critical vulnerabilities were identified in this smart contract. However, as a best practice, it is always recommended to perform a thorough code review and testing to identify and mitigate any possible security threats.
 
@@ -25,7 +25,6 @@ Finally, the contract includes the totalSupply function to get the current total
 The contract has a paused state which can be used to temporarily disable publicMint function, thus avoiding reentrancy attacks.
 
 3. The onlyAccounts modifier ensures that minting can only be done from externally-owned accounts (EOAs) rather than smart contracts, which can prevent some attack vectors.
-The contract's pricing is set by the _price variable which can be updated by the owner of the contract.
 
 4. The contract uses the SafeMath library from OpenZeppelin to prevent overflows and underflows.
 
